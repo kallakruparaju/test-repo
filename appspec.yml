@@ -8,5 +8,3 @@ hooks:
     - location: ./requirements.sh
   ApplicationStart:
     - location: ./start.sh
-      timeout: 60
-      runas: ec2-user
