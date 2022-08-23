@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 
 from flask import Flask
+import logging
+import os
 
 app = Flask(__name__)
-
+logging.getLogger('werkzeug').disabled = True
+os.environ['WERKZEUG_RUN_MAIN']='true'
 
 @app.route('/')
 def hello():
