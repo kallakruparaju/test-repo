@@ -5,8 +5,8 @@ files:
     destination: /home/ec2-user
 hooks:
   BeforeInstall:
-    - location: ./requirements
+    - location: ./requirements.sh
   ApplicationStart:
-    - location: ./start
+    - location: ./start.sh
       timeout: 60
       runas: ec2-user
