@@ -6,7 +6,7 @@ import os
 
 app = Flask(__name__)
 logging.getLogger('werkzeug').disabled = True
-os.environ['WERKZEUG_RUN_MAIN']='true'
+app.logger.disabled=True
 
 @app.route('/')
 def hello():
