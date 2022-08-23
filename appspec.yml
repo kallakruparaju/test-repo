@@ -1,15 +1,12 @@
-‌version: 1.3.2
+version: 0.0
 os: linux
 files:
   - source: /
     destination: /home/ec2-user
-permissions:
-  - object: /
-    pattern: "**"
-    owner: ec2-user
-    group: ec2-user
 hooks:
+  BeforeInstall:
+    - location: ./requirements
   ApplicationStart:
-    - location: /home/ec2-user/start.sh
+    - location: ./start
       timeout: 60
       runas: ec2-user
