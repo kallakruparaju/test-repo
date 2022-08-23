@@ -1,0 +1,14 @@
+‌version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user/
+hooks:
+  BeforeInstall:
+    - location: /requirements.sh
+      timeout: 1200
+      runas: ec2-user
+  ApplicationStart:
+    - location: /start.sh
+      timeout: 60
+      runas: ec2-user
