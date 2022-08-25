@@ -1,4 +1,4 @@
 #!/bin/bash
 
-chmod 777 start.sh
-bash start.sh
+chmod 777 /home/ec2-user/start.sh
+bash /home/ec2-user/start.sh
