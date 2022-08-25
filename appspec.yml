@@ -6,10 +6,9 @@ files:
 hooks:
   BeforeInstall:
     - location: requirements.sh
-    - location: start.sh
       timeout: 300
       runas: root
-   ApplicationStart:
+  ApplicationStart:
     - location: /home/ec2-user/start.sh
       timeout: 300
       runas: root
