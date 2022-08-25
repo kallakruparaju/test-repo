@@ -1,5 +1,5 @@
 #!/bin/bash
 
-chmod +x /home/ec2-user/start.sh
+chmod 777 /home/ec2-user/start.sh
 systemctl start httpd
 pip3 install flask
