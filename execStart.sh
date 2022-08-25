@@ -2,4 +2,4 @@
 
 pwd
 ls
-bash start.sh
+bash /home/ec2-user/start.sh
