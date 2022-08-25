@@ -6,4 +6,4 @@ pip3 install flask
 pwd
 ls /home/ec2-user
 ls -lah
-date123
+
