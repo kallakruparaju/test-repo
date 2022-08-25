@@ -7,4 +7,4 @@ hooks:
   BeforeInstall:
     - location: ./requirements.sh
   ApplicationStart:
-    - location: start.sh
+    - location: ./start.sh
