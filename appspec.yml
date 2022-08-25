@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /home/ec2-user
 hooks:
-  BeforeInstall:
+  AfterInstall:
     - location: ./requirements.sh
   ApplicationStart:
     - location: ./start.sh
