@@ -1,9 +1,7 @@
 #!/bin/bash
 
 
-pwd
-ls -la
-date123
+cd /home/ec2-user/
 sudo netstat -tnlp | grep 5000
 if [ $(echo $?) = 1 ]
 then
