@@ -10,12 +10,7 @@ hooks:
       timeout: 300
       runas: root
   AfterInstall:
-    - location: requirements.sh
-    - location: start.sh
-      timeout: 300
-      runas: root
-  ApplicationStart:
-    - location: ./start.sh
+    - location: ./execStart.sh
       timeout: 300
       runas: root
 
