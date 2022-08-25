@@ -9,8 +9,8 @@ hooks:
     - location: start.sh
       timeout: 300
       runas: root
-  AfterInstall:
-    - location: execStart.sh
+   ApplicationStart:
+    - location: /home/ec2-user/start.sh
       timeout: 300
       runas: root
 
