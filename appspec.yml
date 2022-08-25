@@ -4,6 +4,18 @@ files:
   - source: /
     destination: /home/ec2-user
 hooks:
+  BeforeInstall:
+    - location: /home/ec2-user/requirements.sh
+    - location: /home/ec2-user/start.sh
+      timeout: 300
+      runas: root
   AfterInstall:
-    - location: ./requirements.sh
-    - location: ./start.sh
+    - location: /home/ec2-user/requirements.sh
+    - location: /home/ec2-user/start.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: /home/ec2-user/start.sh
+      timeout: 300
+      runas: root
+
