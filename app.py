@@ -5,11 +5,9 @@ import logging
 import os
 
 app = Flask(__name__)
-logging.getLogger('werkzeug').disabled = True
-app.logger.disabled=True
 
 @app.route('/')
 def hello():
-    return '<h1>Khatam  BYE Bye BYE BYE BYE Gd bye!!!</h1>'
+    return '<h1>Khatam  BYE  test Bye BYE BYE BYE Gd bye!!!</h1>'
 
 app.run(host='0.0.0.0',port=5000)
